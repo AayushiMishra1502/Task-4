@@ -1,0 +1,31 @@
+.cards {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    font-family: sans-serif;
+}
+.card{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+    flex: 25%;
+}
+.card_image{
+    width: 100%;
+    display: block;
+}
+@media (max-width: 800px) {
+    .card {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width: 600px) {
+    .card {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
